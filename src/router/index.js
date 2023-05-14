@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import IndexView from '@/views/IndexView.vue'
-import LoginView from "@/views/LoginView.vue";
-import TestView from "@/views/TestView.vue";
+import IndexView from '@/views/IndexView.vue';
+import LogInView from "@/views/LoginView.vue";
 import AboutView from "@/views/AboutView.vue";
 
 const routes = [
@@ -13,12 +12,12 @@ const routes = [
     {
         path: '/login',
         name: '登录界面',
-        component: LoginView
+        component: LogInView
     },
     {
         path: '/about',
         name: '主界面',
-        component: AboutView,
+        component: AboutView
     },
     {
         path: '/sys',

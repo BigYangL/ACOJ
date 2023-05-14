@@ -1,29 +1,46 @@
 <template>
 <body>
-  <h1>哈哈哈哈哈</h1>
+  <div class="login">
+      <el-button color="#2a5caa" @click="Jumplogin">登录注册界面</el-button>
+  </div>
+  <div class="about">
+      <el-button color="#bed742" @click="JumpAbout">主界面</el-button>
+  </div>
 </body>
-
-<!--<div class="out">-->
-<!--   <div class="in">Hi！</div>-->
-<!--   <div class="in">你好！</div>-->
-<!--</div>-->
 
 </template>
 
 <script>
 export default {
-  name: "IndexView"
+  name: "IndexView",
+    setup(){
+      return{}
+    },
+    methods:{
+        Jumplogin(){
+            this.$router.push("/login")
+        },
+        JumpAbout(){
+            this.$router.push("/about")
+        }
+    },
+
 }
+
 </script>
 
 <style scoped>
+.login, .about{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
 body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
     height: 100vh;
     background-image: linear-gradient(
       125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad

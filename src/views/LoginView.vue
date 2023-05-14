@@ -7,10 +7,8 @@ export default {
     name: "LogInView",
 
     setup(){
-
         const username = ref('')
         const password = ref('')
-
         return {
             username,password,User,Lock
         }
@@ -180,7 +178,6 @@ input {
 }
 
 /*ANIMATION*/
-
 .container.sign-up-mode:before {   /*色块部分右移之后的位置*/
     transform: translate(100%, -60%);
     right: 50%;
@@ -198,11 +195,11 @@ input {
 .container.sign-up-mode .main {  /*点击切换注册后，登录注册面板都移动到左边*/
     left: 25%;
 }
-.container.sign-up-mode .registerAreaBefore { /*注册面板显示 默认隐藏*/
+.container.sign-up-mode .registerArea { /*注册面板显示 默认隐藏*/
     opacity: 1;
     z-index: 2;
 }
-.container.sign-up-mode .loginAreaBefore {  /*登录面板隐藏 默认显示*/
+.container.sign-up-mode .loginArea {  /*登录面板隐藏 默认显示*/
     opacity: 0;
     z-index: 1;
 }
@@ -213,7 +210,7 @@ input {
 .container.sign-up-mode .right-panel {
     pointer-events: all;
 }
-/**/
+
 
 .main{   /*注册登录表格的初始位置+动画延迟*/
     position: absolute;
