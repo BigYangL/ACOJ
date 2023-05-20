@@ -15,11 +15,6 @@ const routes = [
         component: LogInView
     },
     // {
-    //     path: '/about',
-    //     name: '主界面',
-    //     component: AboutView
-    // },
-    // {
     //     path: '/sys',
     //     name: '管理',
     //     redirect: 'sys/user',
@@ -40,10 +35,10 @@ const routes = [
     //     ]
     // },
     {
-        path: '/test',
-        name: '测试界面',
+        path: '/about',
+        name: '主界面',
         component: AboutView,
-        redirect: "/test/test1",
+        redirect: "/about/test1",
         meta: { title:'测试模块', icon:''},
         children: [
             {
