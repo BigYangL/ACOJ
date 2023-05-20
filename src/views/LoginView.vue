@@ -1,7 +1,6 @@
 <script>
 import {ref} from "vue";
 import {User,Lock} from '@element-plus/icons-vue';
-
 export default {
 
     name: "LogInView",
@@ -47,13 +46,13 @@ export default {
                     <el-row class="login-row"><el-col :offset="2"><el-input v-model="username" placeholder="输入用户名" :prefix-icon="User"></el-input></el-col></el-row>
                     <el-row class="login-row"><el-col :offset="2"><el-input v-model="password" placeholder="输入密码" type="password" show-password prefix-icon="Lock"></el-input></el-col></el-row>
                     <el-row class="login-row"><el-col :offset="2"><el-input v-model="password" placeholder="确认密码" type="password" show-password prefix-icon="Lock"></el-input></el-col></el-row>
-                    <el-row class="login-row"><el-col :offset="9"><el-button class="btn1" type="primary">注册</el-button></el-col></el-row>
+                    <el-row class="login-row"><el-col :offset="9"><el-button round class="btn1" type="success">注册</el-button></el-col></el-row>
                 </div>
                 <div class="loginArea">
                     <el-row class="login-row"><el-col :offset="9"><h2 class="title">登录</h2></el-col></el-row>
                     <el-row class="login-row"><el-col :offset="2"><el-input v-model="username" placeholder="输入用户名" :prefix-icon="User"></el-input></el-col></el-row>
                     <el-row class="login-row"><el-col :offset="2"><el-input v-model="password" placeholder="输入密码" type="password" show-password prefix-icon="Lock"></el-input></el-col></el-row>
-                    <el-row class="login-row"><el-col :offset="9"><el-button class="btn1" type="primary">登录</el-button></el-col></el-row>
+                    <el-row class="login-row"><el-col :offset="9"><el-button round class="btn1" type="success">登录</el-button></el-col></el-row>
                 </div>
             </div>
         </div>
@@ -117,7 +116,7 @@ input {
     position: absolute;
     height: 2000px;
     width: 2000px;
-    background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+    background-image: linear-gradient(-45deg, #181d4b 0%, #0c212b 100%);
     transform: translateY(-60%);
     top:-10%;
     right:48%;
@@ -262,16 +261,10 @@ input {
 }
 .btn1{
     width: 100px;
-    background-color: #5995fd;
+    background-color: #0c212b;
     border: none;
-    outline: none;
     height: 49px;
-    border-radius: 49px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
     margin: 10px 0;
-    cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 </style>

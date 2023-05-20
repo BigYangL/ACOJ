@@ -21,7 +21,7 @@ export default {
             this.$router.push("/login")
         },
         JumpAbout(){
-            this.$router.push("/about")
+            this.$router.push("/test")
         }
     },
 
